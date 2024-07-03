@@ -1,0 +1,22 @@
+services:
+  app1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - app1
+    hostname: app1
+    ports:
+      - 8000:8000 # The basic syntax is HOST_MACHINE_PORT:CONTAINER_PORT
+  app2:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - app2
+    hostname: app2
+    ports:
+      - 8015:8000 # The basic syntax is HOST_MACHINE_PORT:CONTAINER_PORT
+networks:
+  app1:
+  app2:
