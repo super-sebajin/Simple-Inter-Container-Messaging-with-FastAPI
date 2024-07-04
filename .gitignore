@@ -4,3 +4,6 @@ __pycache__/
 .vscode/
 /.venv/
 /.idea/
+/.env
+/db/
+README.Docker.md

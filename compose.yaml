@@ -3,8 +3,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    env_file:
+      - .env
     networks:
-      - app1
+      - app-network
     hostname: app1
     ports:
       - 8000:8000 # The basic syntax is HOST_MACHINE_PORT:CONTAINER_PORT
@@ -12,11 +14,12 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    env_file:
+      - .env
     networks:
-      - app2
+      - app-network
     hostname: app2
     ports:
-      - 8015:8000 # The basic syntax is HOST_MACHINE_PORT:CONTAINER_PORT
+      - 8015:8015 # The basic syntax is HOST_MACHINE_PORT:CONTAINER_PORT
 networks:
-  app1:
-  app2:
+  app-network:

@@ -8,7 +8,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 ENV PYTHONUNBUFFERED=1
 
 ENV VIRTUAL_ENV=/opt/venv
-
+ 
 WORKDIR /app
 COPY . .
 
@@ -18,6 +18,7 @@ RUN apt-get install perl-modules -y
 # Activate the virtual environment
 RUN python -m venv ${VIRTUAL_ENV}
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
+RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 

@@ -1,0 +1,12 @@
+{
+    "payload": "get-root",
+    "hostname": "API1_HOST",
+    "port": "API1_PORT"
+}
+
+
+{
+    "payload": "get-root",
+    "hostname": "API2_HOST",
+    "port": "API2_PORT"
+}
