@@ -1,3 +1,4 @@
+message from app2 to app1
 {
     "payload": "get-root",
     "hostname": "API1_HOST",
@@ -5,6 +6,7 @@
 }
 
 
+message from app1 to app2
 {
     "payload": "get-root",
     "hostname": "API2_HOST",
