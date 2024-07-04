@@ -6,4 +6,4 @@ __pycache__/
 /.idea/
 /.env
 /db/
-README.Docker.md
+/README.Docker.md
