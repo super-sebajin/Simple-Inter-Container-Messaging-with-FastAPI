@@ -22,5 +22,11 @@ RUN python -m pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 
-# Run the application.
-CMD perl app_run/commands/startapi.pl
+#################### RUN THE APPLICATION ######################
+# The application can use perl or bash to start
+#
+# perl activation
+# CMD perl app_run/commands/startapi.pl
+#
+# bash activation
+CMD bash app_run/commands/startapi.sh

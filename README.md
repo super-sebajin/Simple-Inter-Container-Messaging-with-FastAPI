@@ -32,3 +32,7 @@ Then, to have `app1` message `app2` and vice-versa, just use the appropriate `js
 
 You can use a tool like Postman or the containers' own Swagger UIs to test it out.
 
+# Updates:
+
+- 2024-08-2024 - Added and defaulted to bash activation with `bash app_run/commands/startapi.pl`.
+
